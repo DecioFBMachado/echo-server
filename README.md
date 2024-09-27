@@ -20,9 +20,11 @@ This Go application is a simple HTTP/HTTPS server that allows you to specify var
 3. Build the binary
 
 ## Options
--port: Defines the port to be used by the server (default is 8080).
--c: Path to the SSL certificate file. If both -c (certificate) and -key (key file) are provided, the server will start in HTTPS mode.
--key: Path to the SSL key file (used with -c for HTTPS).
--status: Set the HTTP status code for the response (default is 200 OK).
--rf: Path to the file containing the response body. If specified, the content of this file will be sent as the HTTP response body.
--h: Show available options.
+
+- **`-port`**: Defines the port to be used by the server (default is `8080`).
+- **`-c`**: Path to the SSL certificate file. If both `-c` (certificate) and `-key` (key file) are provided, the server will start in HTTPS mode.
+- **`-key`**: Path to the SSL key file (used with `-c` for HTTPS).
+- **`-status`**: Set the HTTP status code for the response (default is `200 OK`).
+- **`-rf`**: Path to the file containing the response body. If specified, the content of this file will be sent as the HTTP response body.
+- **`-h`**: Show available options.
+
